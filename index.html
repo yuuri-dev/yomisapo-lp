@@ -51,7 +51,28 @@
       text-decoration: none;
     }
 
-    .nav-logo svg { width: 28px; height: 28px; }
+    .nav-logo img { width: 28px; height: 28px; border-radius: 7px; object-fit: cover; }
+
+    .hero-app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      object-fit: cover;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      display: block;
+      margin: 0 auto 24px;
+    }
+
+    .hero-mascot-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .hero-mascot {
+      width: 148px;
+      mix-blend-mode: multiply;
+    }
 
     .nav-links { display: flex; gap: 24px; align-items: center; }
 
@@ -394,12 +415,7 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">
-    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="10" fill="#3d6b4f"/>
-      <path d="M12 28V13a1 1 0 0 1 1-1h6a5 5 0 0 1 5 5v11" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-      <path d="M28 28V17a5 5 0 0 0-5-5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-      <line x1="10" y1="28" x2="30" y2="28" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-    </svg>
+    <img src="images/yomisapo_3d.jpg" alt="よみサポ">
     よみサポ
   </a>
   <div class="nav-links">
@@ -411,6 +427,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img class="hero-app-icon" src="images/yomisapo_3d.jpg" alt="よみサポ">
   <div class="hero-badge">読書支援アプリ for iOS</div>
   <h1>読書をもっと<br><span>深く</span>、楽しく。</h1>
   <p>本棚の管理から、重要用語の記録・クイズ復習まで。<br>読んで終わりにしない読書体験を、よみサポが支えます。</p>
@@ -420,6 +437,11 @@
       App Store でダウンロード
     </a>
     <a href="#features" class="btn-secondary">機能を見る</a>
+  </div>
+
+  <!-- マスコット -->
+  <div class="hero-mascot-wrap">
+    <img class="hero-mascot" src="images/yomisapo_2d.jpg" alt="">
   </div>
 
   <!-- スクリーンショット -->
